@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:W25W6WpfControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" FontSize="16" FontWeight="Bold">
+    <Canvas>
+        <UniformGrid Height="64" Width="88" Canvas.Left="694" Canvas.Top="71" Background="#FFFFFDD0">
+            <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </UniformGrid>
+        <Image Height="39" Canvas.Left="705" Canvas.Top="19" Width="66" Source="/Car.png"/>
+        <GroupBox Height="138" Header="Cities" Width="152" Canvas.Left="34" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Canvas>
+                <CheckBox x:Name="chkToronto" Content="Toronto" Canvas.Left="10" Canvas.Top="10"/>
+                <CheckBox x:Name="chkParis" Content="Paris" Canvas.Left="10" Canvas.Top="34" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <CheckBox x:Name="chkTokyo" Content="Tokyo" Canvas.Left="10" Canvas.Top="59" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <CheckBox x:Name="chkSydney" Content="Sydney" Canvas.Left="10" Canvas.Top="84" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Canvas>
+        </GroupBox>
+        <Button x:Name="btnGetCities" Content="Get Cities" Canvas.Left="191" Canvas.Top="38" Height="34" Width="105" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnGetCities_Click"/>
+        <Label x:Name="lblOutput" Canvas.Left="558" Canvas.Top="283" Height="103" Width="213" Background="#FFB6F4F5"/>
 
-    </Grid>
+    </Canvas>
 </Window>

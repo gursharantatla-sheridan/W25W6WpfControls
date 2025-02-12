@@ -20,4 +20,20 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+
+    private void btnGetCities_Click(object sender, RoutedEventArgs e)
+    {
+        string cities = "";
+
+        if (chkToronto.IsChecked == true)
+            cities += "Toronto\n";
+        if (chkParis.IsChecked == true)
+            cities += chkParis.Content + "\n";
+        if (chkTokyo.IsChecked == true)
+            cities += chkTokyo.Content + "\n";
+        if (chkSydney.IsChecked == true)
+            cities += chkSydney.Content + "\n";
+
+        lblOutput.Content = cities;
+    }
 }

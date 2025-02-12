@@ -50,4 +50,20 @@ public partial class MainWindow : Window
 
         lblOutput.Content = "Gender = " + gender;
     }
+
+    private void btnGetProvince_Click(object sender, RoutedEventArgs e)
+    {
+        if (cmbProvince.SelectedItem != null)
+        {
+            lblOutput.Content = cmbProvince.Text;
+        }
+    }
+
+    private void cmbProvince_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (cmbProvince.SelectedItem != null)
+        {
+            lblOutput.Content = ((ComboBoxItem)cmbProvince.SelectedItem).Content.ToString();
+        }
+    }
 }

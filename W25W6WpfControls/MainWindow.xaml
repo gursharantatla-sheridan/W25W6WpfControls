@@ -46,6 +46,7 @@
             <ListBoxItem Content="Earth" />
             <ListBoxItem Content="Mars" />
         </ListBox>
+        <Button x:Name="btnShowWin2" Content="Show Win 2" Canvas.Left="584" Canvas.Top="163" Height="64" Width="154" Click="btnShowWin2_Click"/>
 
     </Canvas>
 </Window>

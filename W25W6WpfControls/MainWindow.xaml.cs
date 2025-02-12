@@ -36,4 +36,18 @@ public partial class MainWindow : Window
 
         lblOutput.Content = cities;
     }
+
+    private void btnGetGender_Click(object sender, RoutedEventArgs e)
+    {
+        string gender = "No gender selected";
+
+        if (rdoFemale.IsChecked == true)
+            gender = rdoFemale.Content.ToString();
+        else if (rdoMale.IsChecked == true)
+            gender = rdoMale.Content.ToString();
+        else if (rdoOther.IsChecked == true)
+            gender = rdoOther.Content.ToString();
+
+        lblOutput.Content = "Gender = " + gender;
+    }
 }

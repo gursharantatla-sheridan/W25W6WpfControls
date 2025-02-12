@@ -40,6 +40,12 @@
             <ComboBoxItem Content="Alberta"/>
         </ComboBox>
         <Button x:Name="btnGetProvince" Content="Get Province" Canvas.Left="244" Canvas.Top="345" Height="34" Width="104" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnGetProvince_Click"/>
+        <ListBox Height="216" Width="174" Canvas.Left="371" Canvas.Top="38">
+            <ListBoxItem Content="Mercury" />
+            <ListBoxItem Content="Venus" />
+            <ListBoxItem Content="Earth" />
+            <ListBoxItem Content="Mars" />
+        </ListBox>
 
     </Canvas>
 </Window>
